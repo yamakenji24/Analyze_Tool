@@ -11,7 +11,6 @@ from fbprophet.plot import plot_plotly
 students = open('./studentlist.csv')
 contests = open('./contestlist.csv')
 
-
 def prediction(df):
     model = Prophet(weekly_seasonality=False, yearly_seasonality=False)
     model.fit(df)
